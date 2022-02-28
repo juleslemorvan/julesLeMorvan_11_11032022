@@ -1,0 +1,24 @@
+.notFound {
+  color: #ff6060;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content h1 {
+    margin: 5rem 3rem 0rem;
+    display: flex;
+    font-size: 17rem;
+    color: #ff6060;
+  }
+  .content p {
+    font-size: 2rem;
+    margin-bottom: 150px;
+  }
+  .content a {
+    color: #ff6060;
+    text-decoration: underline;
+    font-size: 1.5rem;
+  }
+}

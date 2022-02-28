@@ -1,0 +1,16 @@
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 340px;
+  width: 340px;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  cursor: pointer;
+}
+
+.cardTitle {
+  margin-top: auto;
+  color: white;
+}

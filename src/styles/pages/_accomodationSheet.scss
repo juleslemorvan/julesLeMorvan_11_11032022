@@ -1,0 +1,100 @@
+.carrousel {
+  min-width: 1240px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+  margin-top: 30px;
+
+  .firstLigne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .accomodationTitle {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  .hostInfos {
+    display: flex;
+    align-items: center;
+  }
+
+  .accomodationLocation {
+    font-size: 18px;
+    line-height: 26x;
+  }
+  .hostName {
+    font-size: 18px;
+    line-height: 26x;
+  }
+
+  .hostImg {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+  }
+
+  .secondLigne {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tagList {
+    display: flex;
+    margin: 20px 0;
+  }
+
+  .tagItem {
+    background: #ff6060;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px 40px;
+  }
+
+  .rate {
+    display: flex;
+  }
+  .emptyStar {
+    font-size: 30px;
+  }
+  .fullStar {
+    font-size: 30px;
+  }
+
+  .dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ff6060;
+    width: 582px;
+    height: 52px;
+    border-radius: 10px;
+  }
+  .dropdownTitle {
+    font-size: 18px;
+    color: white;
+    padding-left: 20px;
+  }
+
+  .open {
+    background: #ff6060;
+    color: white;
+  }
+
+  .div {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    background: #f6f6f6;
+  }
+}

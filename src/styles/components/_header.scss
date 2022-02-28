@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  @media (max-width: "600px") {
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    margin-right: 40px;
+    @media (max-width: "600px") {
+      height: 42px;
+    }
+  }
+
+  .navigation {
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      text-decoration: none;
+
+      a {
+        text-decoration: none;
+      }
+
+      .nav-container-active {
+        text-decoration: underline #ff6060;
+      }
+
+      .nav-item {
+        margin-right: 30px;
+        font-size: 24px;
+        color: #ff6060;
+        white-space: nowrap;
+        @media (max-width: "600px") {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
