@@ -2,18 +2,18 @@ import React, { useState, useRef, useEffect } from "react";
 
 export const Dropdown = ({ content, title }) => {
   const [toggle, setToggle] = useState(false);
-  const [heightEl, setHeightEl] = useState();
+  /*   const [heightEl, setHeightEl] = useState();
 
   const refHeight = useRef();
 
   useEffect(() => {
     setHeightEl(`${refHeight.current.scrolHeight}px`);
-  }, []);
+  }, []); */
 
   const toggleState = () => setToggle(!toggle);
 
   return (
-    <div className="dropdown">
+    <div className="dropdown" key={{ title }}>
       <button className="dropdown-visible" onClick={toggleState}>
         <span className="dropdownTitle">{title}</span>
         <svg
@@ -31,15 +31,19 @@ export const Dropdown = ({ content, title }) => {
         </svg>
       </button>
 
-      <div
-        className={toggle ? "dropdown-toggle animated" : "dropdown-toggle"}
-        style={{ height: toggle ? `${heightEl}` : "0px" }}
-        ref={refHeight}
-      >
-        <p className="toggleContent" aria-hidden={toggle ? "true" : "false"}>
-          {content}
-        </p>
-      </div>
+      {toggle && (
+        <div
+        /* className={toggle ? "dropdown-toggle animated" : "dropdown-toggle"} */
+        /* style={{ height: toggle ? `${heightEl}` : "0px" }}
+        ref={refHeight} */
+        >
+          <p className="toggleContent" aria-hidden={toggle ? "true" : "false"}>
+            {Array.isArray(content)
+              ? content.map((item) => <p>{item}</p>)
+              : content}
+          </p>
+        </div>
+      )}
     </div>
   );
 };

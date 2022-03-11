@@ -22,7 +22,7 @@ const AccomodationSheet = () => {
 
   return (
     <>
-      <Carrousel data={accomodation.pictures} />
+      <Carrousel data={accomodation.pictures} key={accomodation.title} />
       <div className="infos">
         <div className="firstLigne">
           <h1 className="accomodationTitle">{accomodation.title}</h1>
@@ -49,7 +49,7 @@ const AccomodationSheet = () => {
       </div>
       <div className="dropdown-container">
         <Dropdown title="description" content={accomodation.description} />
-        <Dropdown title="Equipement" content={accomodation.equipement} />
+        <Dropdown title="Equipement" content={accomodation.equipments} />
       </div>
     </>
   );

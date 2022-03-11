@@ -1,0 +1,67 @@
+.about {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+
+  .banner {
+    height: 223px;
+    background: url(../../assets/images/bannerAbout.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    border-radius: 25px;
+    filter: brightness(75%);
+  }
+
+  .accordion {
+    margin: 33px 80px;
+    background-color: blue($color: #000000);
+  }
+
+  .item {
+    margin: 30px 0px;
+  }
+
+  .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff6060;
+    height: 47px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .title {
+    padding: 8px 20px;
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+  }
+
+  .arrow-down {
+    padding: 8px 35px;
+  }
+
+  .content {
+    background: #f6f6f6;
+    scroll-behavior: smooth;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    color: #ff6060;
+    font-size: 24px;
+    line-height: 35px;
+
+    .elem {
+      padding: 36px 27px 19px 18px;
+    }
+  }
+
+  .content.show {
+    scroll-behavior: smooth;
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.2s ease-in-out;
+  }
+}

@@ -1,11 +1,12 @@
 .dropdown-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .dropdown {
   width: 582px;
-  height: 52px;
+
   border-radius: 10px;
   background: #ff6060;
 }
@@ -21,7 +22,6 @@
   align-items: center;
   padding: 7px 15px;
   border: 1px solid #ff6060;
-  height: 100%;
 }
 
 .dropdownTitle {
@@ -32,14 +32,12 @@
 .dropdown-toggle {
   height: 0px;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, height 0.3s 0.3s ease-in-out;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
 .animated {
   opacity: 1;
-  transition: height 0.3s ease-in-out opacity 0.3s 0.3s ease-in-out;
 }
 
 .toggleContent {
@@ -48,7 +46,6 @@
   margin: 0;
   padding: 40px 12px 53px 20px;
   pointer-events: none;
-
   background: #f6f6f6;
   color: #ff6060;
   border-bottom-left-radius: 3px;
