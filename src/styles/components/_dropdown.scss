@@ -2,13 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media screen and (max-width: 770px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .dropdown {
   width: 582px;
-
   border-radius: 10px;
   background: #ff6060;
+  @media screen and (max-width: 770px) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 .dropdown-visible {
@@ -22,11 +32,17 @@
   align-items: center;
   padding: 7px 15px;
   border: 1px solid #ff6060;
+  @media screen and (max-width: 446px) {
+    height: 30px;
+  }
 }
 
 .dropdownTitle {
   font-size: 18px;
   line-height: 26px;
+  @media screen and (max-width: 446px) {
+    font-size: 13px;
+  }
 }
 
 .dropdown-toggle {

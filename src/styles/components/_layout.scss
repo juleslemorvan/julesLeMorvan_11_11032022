@@ -1,8 +1,7 @@
 .layout {
   padding: 40px 60px 0px 60px;
   min-height: 85vh;
-
-  @media (max-width: "600px") {
+  @media screen and (max-width: 670px) {
     padding: 40px 20px;
   }
 }
