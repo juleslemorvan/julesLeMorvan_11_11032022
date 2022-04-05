@@ -11,15 +11,17 @@ const Home = () => {
       <div className="backgroundOpacity">
         <h1>Chez vous, partout et ailleurs</h1>
       </div>
-      <div className="accomodations" id="allAccomodations">
-        {data.map((item) => (
-          <Card
-            title={item.title}
-            cover={item.cover}
-            key={item.id}
-            onClick={() => navigate(`/fiche-logement/${item.id}`)}
-          />
-        ))}
+      <div className="bg-gray">
+        <div className="accomodations" id="allAccomodations">
+          {data.map((item) => (
+            <Card
+              title={item.title}
+              cover={item.cover}
+              key={item.id}
+              onClick={() => navigate(`/fiche-logement/${item.id}`)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

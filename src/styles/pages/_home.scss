@@ -1,9 +1,8 @@
 .homeContent {
   .backgroundOpacity {
     position: relative;
-    background: #f6f6f6;
+    border-radius: 25px;
     overflow: hidden;
-    border-radius: 20px;
   }
 
   .backgroundOpacity h1 {
@@ -15,6 +14,11 @@
     justify-content: center;
     color: white;
     font-size: 48px;
+    @media screen and (max-width: 630px) {
+      font-size: 24px;
+    }
+    @media screen and (max-width: 380px) {
+    }
   }
 
   .backgroundOpacity::before {
@@ -33,6 +37,11 @@
     background-size: cover;
   }
 
+  .bg-gray {
+    background: #f6f6f6;
+    border-radius: 20px;
+  }
+
   .accomodations {
     background: #f6f6f6;
     margin-top: 50px;
@@ -41,6 +50,16 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 340px);
     gap: 50px;
-    justify-content: center;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+
+  @media screen and (max-width: 940px) {
+    .accomodations {
+      background: #fff;
+      padding: 50px 10px;
+      gap: 20px;
+      margin-top: 0px;
+    }
   }
 }

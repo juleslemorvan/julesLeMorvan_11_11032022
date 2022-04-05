@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <svg
         width="122"
         height="40"
@@ -34,6 +34,6 @@ export const Footer = () => {
       </svg>
 
       <div className="footerContent">© 2020 Kasa. All rights reserved</div>
-    </div>
+    </footer>
   );
 };

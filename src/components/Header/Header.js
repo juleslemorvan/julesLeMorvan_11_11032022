@@ -4,7 +4,7 @@ import logo from "../../assets/images/logo.jpg";
 
 export const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <img src={logo} className="logo" alt="logo de l'entreprise" />
       <nav className="navigation">
         <ul>
@@ -26,6 +26,6 @@ export const Header = () => {
           </NavLink>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
