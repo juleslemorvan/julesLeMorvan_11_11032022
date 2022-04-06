@@ -7,6 +7,9 @@
   flex-direction: column;
   color: #ff6060;
   margin-top: 30px;
+  @media screen and (max-width: 376px) {
+    margin-top: 0;
+  }
 
   .firstLigne {
     display: flex;
@@ -26,6 +29,17 @@
   .hostInfos {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 376px) {
+      display: none;
+    }
+  }
+
+  .hostInfosMobile {
+    display: none;
+    @media screen and (max-width: 376px) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .accomodationLocation {

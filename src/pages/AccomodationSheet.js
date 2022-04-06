@@ -45,6 +45,14 @@ const AccomodationSheet = () => {
             </ul>
           </div>
           <Rate />
+          <div className="hostInfosMobile">
+            <p className="hostName">{accomodation.host.name}</p>
+
+            <div
+              className="hostImg"
+              style={{ backgroundImage: `url(${accomodation.host.picture})` }}
+            ></div>
+          </div>
         </div>
       </div>
       <div className="dropdown-container">
