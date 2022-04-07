@@ -1,14 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 
 export const Dropdown = ({ content, title }) => {
   const [toggle, setToggle] = useState(false);
-  /*   const [heightEl, setHeightEl] = useState();
-
-  const refHeight = useRef();
-
-  useEffect(() => {
-    setHeightEl(`${refHeight.current.scrolHeight}px`);
-  }, []); */
 
   const toggleState = () => setToggle(!toggle);
 
@@ -32,11 +25,7 @@ export const Dropdown = ({ content, title }) => {
       </button>
 
       {toggle && (
-        <div
-        /* className={toggle ? "dropdown-toggle animated" : "dropdown-toggle"} */
-        /* style={{ height: toggle ? `${heightEl}` : "0px" }}
-        ref={refHeight} */
-        >
+        <div>
           <p className="toggleContent" aria-hidden={toggle ? "true" : "false"}>
             {Array.isArray(content)
               ? content.map((item) => <p>{item}</p>)

@@ -85,6 +85,11 @@
     margin: 20px 0;
   }
 
+  .tags {
+    @media screen and (max-width: 376px) {
+      flex-wrap: wrap;
+    }
+  }
   .tagItem {
     background: #ff6060;
     color: white;
@@ -97,6 +102,7 @@
       justify-content: center;
       width: 84px;
       font-size: 10px;
+      flex-wrap: wrap;
     }
   }
 

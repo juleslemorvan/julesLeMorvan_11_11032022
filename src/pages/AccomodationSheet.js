@@ -5,20 +5,9 @@ import { Carrousel } from "../components/Carrousel/Carrousel";
 import { Rate } from "../components/Rate/Rate";
 import Dropdown from "../components/Dropdown/Dropdown";
 
-/* 
-
-React Router
-useNavigate => renvoie une fonction qui prend en paramètre la future route
-      Exemple : const navigate = useNavigate()  ..... navigate('/maRoute/123')
-
-useParams => Renvoie les paramètres passés dans la route
-      Exemple : const params = useParams() ..... // params = { id : 123 }
-*/
-
 const AccomodationSheet = () => {
   const { id } = useParams();
   const accomodation = data.find((item) => item.id === id);
-  console.log(accomodation);
 
   return (
     <>
@@ -40,7 +29,9 @@ const AccomodationSheet = () => {
           <div className="tags">
             <ul className="tagList">
               {accomodation.tags.map((tag) => (
-                <li className="tagItem">{tag}</li>
+                <li className="tagItem" key={accomodation.tag}>
+                  {tag}
+                </li>
               ))}
             </ul>
           </div>

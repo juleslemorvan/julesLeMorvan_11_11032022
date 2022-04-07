@@ -1,8 +1,6 @@
 import { useState } from "react";
 
 export const Carrousel = ({ data }) => {
-  console.log(data);
-
   const [currImg, setCurrImg] = useState(0);
 
   const prevImg = () => {

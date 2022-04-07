@@ -16,6 +16,9 @@
   .accordion {
     margin: 33px 80px;
     background-color: blue($color: #000000);
+    @media screen and (max-width: 376px) {
+      margin: 33px 0px;
+    }
   }
 
   .item {
@@ -30,6 +33,9 @@
     height: 47px;
     border-radius: 5px;
     cursor: pointer;
+    @media screen and (max-width: 376px) {
+      height: 30px;
+    }
   }
 
   .title {
@@ -37,10 +43,17 @@
     font-size: 24px;
     line-height: 35px;
     color: white;
+    @media screen and (max-width: 376px) {
+      font-size: 13px;
+    }
   }
 
   .arrow-down {
     padding: 8px 35px;
+    @media screen and (max-width: 376px) {
+      height: 15px;
+      width: 9px;
+    }
   }
 
   .content {
@@ -48,10 +61,13 @@
     scroll-behavior: smooth;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.2s ease-in-out;
+
     color: #ff6060;
     font-size: 24px;
     line-height: 35px;
+    @media screen and (max-width: 376px) {
+      font-size: 12px;
+    }
 
     .elem {
       padding: 36px 27px 19px 18px;
@@ -63,5 +79,6 @@
     height: auto;
     max-height: 9999px;
     transition: all 0.2s ease-in-out;
+    line-height: normal;
   }
 }
