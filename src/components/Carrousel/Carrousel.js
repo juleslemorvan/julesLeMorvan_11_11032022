@@ -3,6 +3,8 @@ import { useState } from "react";
 export const Carrousel = ({ data }) => {
   const [currImg, setCurrImg] = useState(0);
 
+  console.log(data);
+
   const prevImg = () => {
     if (currImg === 0) {
       setCurrImg(data.length - 1);
@@ -42,7 +44,11 @@ export const Carrousel = ({ data }) => {
             </svg>
           </div>
         )}
-        <div className="center"></div>
+        <div className="center">
+          <div className="numImg">
+            {currImg + 1} / {data.length}
+          </div>
+        </div>
         {data.length > 1 && (
           <div className="right">
             <svg

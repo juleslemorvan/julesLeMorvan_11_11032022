@@ -22,6 +22,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  border-radius: 10px;
 }
 
 .carouselInner .left {
@@ -41,6 +42,18 @@
 .carousel .center {
   flex: 90%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+
+  align-items: flex-end;
+}
+.numImg {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 18px;
+  @media screen and (max-width: 376px) {
+    display: none;
+  }
 }
 
 .carouselInner .right {
