@@ -16,7 +16,7 @@
   .accordion {
     margin: 33px 80px;
     background-color: blue($color: #000000);
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 425px) {
       margin: 33px 0px;
     }
   }
