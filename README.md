@@ -1,4 +1,35 @@
-# Getting Started with Create React App
+
+# Kasa
+
+## Description
+
+Kasa is one of my project (n°11) of my Openclassroom training
+
+My job was to make the front end part of the application using React
+
+kasa is an application allowing the rental of apartments between individuals
+
+
+The user has the possibility to view a set of apartment rentals made available to individuals. an individual page is present to present each property with a photo slider.
+
+## Technologies
+
+For this App I use some technologies like :
+
+- HTML/CSS
+- React
+- React Router v6
+
+
+## Launch the project
+
+- Fork the repository
+- Clone the repository
+- Npm install command will allow you to install the dependencies.
+- Npm start command will allow you to run the app.
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
